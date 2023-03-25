@@ -13,10 +13,40 @@ body {
   color: var(--primary-color);
   background-color: var(--body-color);
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+}
+.section {
+}
 /* HEADER */
+.header {
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-nav {
+  display: flex;
+  flex-direction: row;
   text-decoration: none;
+  padding: 24px 0 24px 0;
 }
 
 .header-logo {
@@ -28,19 +58,35 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-
   color: var(--accent-color);
+  height: 24px;
+  margin-right: 76px;
 }
 
 .logo-studio-part-top {
   color: var(--primary-color);
 }
 .header-list {
+  display: flex;
   list-style: none;
 }
 
+.header-list-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-address {
+  padding: 24px 156px 24px 0;
+}
+
 .address-list {
+  display: flex;
   list-style: none;
+  margin-left: 332px;
+}
+
+.address-list-data:not(:last-child) {
+  margin-right: 40px;
 }
 
 .nav-info {
@@ -77,6 +123,9 @@ body {
 
 .section-hero {
   background-color: var(--par-color);
+  height: 600px;
+  padding-top: 188px;
+  text-align: center;
 }
 
 .hero-title {
@@ -84,7 +133,6 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--body-color);
 }
@@ -99,6 +147,11 @@ body {
   color: var(--body-color);
   cursor: pointer;
   background-color: var(--accent-color);
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border-color: transparent;
+  margin-top: 48px;
 }
 
 .main-button:hover {
@@ -108,11 +161,21 @@ body {
 /* ADVANTAGES */
 
 .advantages-title {
+  position: absolute;
   opacity: 0;
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   list-style: none;
+  padding-top: 120px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .advantages-list-title {
@@ -120,6 +183,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: var(--primary-color);
+  margin-bottom: 8px;
 }
 
 .advantages-parag {
@@ -130,6 +194,10 @@ body {
 }
 
 /* POSSIBILITIES */
+
+.possibilities {
+  margin-top: 120px;
+}
 
 .possibilities-title {
   font-weight: 700;
@@ -142,13 +210,21 @@ body {
 }
 
 .possibilities-list {
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
   list-style: none;
+}
+
+.possibilities-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /* OUR TEAM */
 
 .team {
   background-color: var(--light-color);
+  margin-top: 120px;
 }
 
 .team-title {
@@ -159,14 +235,31 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-color);
+  padding-top: 120px;
 }
 
 .team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
+  margin-top: 72px;
+  padding-bottom: 120px;
 }
 
 .team-list-item {
   background-color: var(--body-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team-img {
 }
 
 .team-list-title {
@@ -176,6 +269,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-color);
   list-style: none;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-lsit-par {
@@ -183,12 +278,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--par-color);
+  margin-bottom: 32px;
 }
 
 /* FOOTER */
 
 .footer {
   background-color: var(--primary-color);
+  height: 312px;
 }
 
 .footer-logo {
@@ -201,6 +298,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--accent-color);
+  padding-left: 156px;
 }
 
 .logo-studio-part-bot {
@@ -212,6 +310,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+  box-sizing: content-box;
+  width: 264px;
+  height: 72px;
+  margin-top: 16px;
+  padding-left: 156px;
+  padding-bottom: 100px;
 }
 
 /* PORTFOLIO */
@@ -223,7 +327,16 @@ body {
 /* MENU BUTTONS */
 
 .button-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   list-style: none;
+  padding-top: 96px;
+}
+
+.button-list-data:not(:last-child) {
+  margin-right: 24px;
 }
 
 .buttons {
@@ -236,18 +349,38 @@ body {
   background-color: var(--light-color);
   color: var(--accent-color);
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .buttons:hover,
 .buttons:focus {
   background-color: var(--hover-color);
   color: var(--body-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+  border-radius: 4px;
 }
 
 /* IMAGES */
 
 .images-list {
+  width: 1158px;
+  margin-top: 72px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.images-list-data {
+  border: 1px solid #e7e9fc;
+  margin-right: 24px;
+  margin-bottom: 48px;
 }
 
 .images-list-title {
@@ -256,6 +389,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  margin: 32px 0 8px 16px;
 }
 
 .iamges-list-link {
@@ -266,4 +400,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--par-color);
+  margin-left: 16px;
+  padding-bottom: 32px;
 }
