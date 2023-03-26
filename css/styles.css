@@ -29,24 +29,24 @@ ul {
 }
 
 .container {
+  width: 1158px;
 }
 .section {
+  padding-left: 156px;
 }
 /* HEADER */
 .header {
-  height: 72px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
   border-bottom: 1px solid #e7e9fc;
+  max-height: 72px;
 }
 
 .header-nav {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+
   text-decoration: none;
-  padding: 24px 0 24px 0;
 }
 
 .header-logo {
@@ -59,7 +59,6 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--accent-color);
-  height: 24px;
   margin-right: 76px;
 }
 
@@ -69,6 +68,9 @@ ul {
 .header-list {
   display: flex;
   list-style: none;
+  align-content: center;
+
+  margin-right: 332px;
 }
 
 .header-list-link:not(:last-child) {
@@ -76,13 +78,12 @@ ul {
 }
 
 .header-address {
-  padding: 24px 156px 24px 0;
+  padding: 24px 0 24px 0;
 }
 
 .address-list {
   display: flex;
   list-style: none;
-  margin-left: 332px;
 }
 
 .address-list-data:not(:last-child) {
@@ -123,8 +124,8 @@ ul {
 
 .section-hero {
   background-color: var(--par-color);
-  height: 600px;
   padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
 }
 
@@ -147,11 +148,11 @@ ul {
   color: var(--body-color);
   cursor: pointer;
   background-color: var(--accent-color);
-  width: 169px;
-  height: 56px;
   border-radius: 4px;
   border-color: transparent;
+  padding: 16px 32px 16px 32px;
   margin-top: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .main-button:hover {
@@ -285,7 +286,6 @@ ul {
 
 .footer {
   background-color: var(--primary-color);
-  height: 312px;
 }
 
 .footer-logo {
@@ -298,6 +298,7 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--accent-color);
+  padding-top: 100px;
   padding-left: 156px;
 }
 
@@ -312,7 +313,6 @@ ul {
   color: var(--light-color);
   box-sizing: content-box;
   width: 264px;
-  height: 72px;
   margin-top: 16px;
   padding-left: 156px;
   padding-bottom: 100px;
@@ -338,7 +338,8 @@ ul {
 .button-list-data:not(:last-child) {
   margin-right: 24px;
 }
-
+.button-list-data {
+}
 .buttons {
   font-family: inherit;
   font-style: normal;
@@ -349,6 +350,7 @@ ul {
   background-color: var(--light-color);
   color: var(--accent-color);
   cursor: pointer;
+  padding: 12px 24px 12px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
@@ -366,13 +368,11 @@ ul {
 /* IMAGES */
 
 .images-list {
-  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 72px;
   padding-bottom: 120px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-around;
   flex-wrap: wrap;
   list-style: none;
 }
