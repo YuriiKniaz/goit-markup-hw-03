@@ -21,34 +21,38 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <nav class="header-nav">
-        <a class="header-logo" href="./index.html"
-          >Web<span class="logo-studio-part-top">Studio</span>
-        </a>
-        <ul class="header-list">
-          <li class="header-list-link">
-            <a href="" class="nav-info">Studio</a>
-          </li>
-          <li class="header-list-link">
-            <a href="./portfolio.html" class="nav-info">Portfolio</a>
-          </li>
-          <li class="header-list-link">
-            <a href="" class="nav-info">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="header-address">
-        <ul class="address-list">
-          <li class="address-list-data">
-            <a href="mailto:info@devstudio.com" class="contacts"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="address-list-data">
-            <a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo" href="./index.html">
+            Web<span class="logo-studio-part-top">Studio</span>
+          </a>
+          <ul class="header-list">
+            <li class="header-list-link">
+              <a href="" class="nav-info">Studio</a>
+            </li>
+            <li class="header-list-link">
+              <a href="./portfolio.html" class="nav-info">Portfolio</a>
+            </li>
+            <li class="header-list-link">
+              <a href="" class="nav-info">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="address-list">
+            <li class="address-list-data">
+              <a href="mailto:info@devstudio.com" class="contacts"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-list-data">
+              <a href="tel:+110001111111" class="contacts"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
@@ -73,98 +77,127 @@
       </ul>
 
       <!-- IMAGES -->
-
-      <ul class="images-list container">
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img
-              src="./images/1-port.jpg"
-              alt="Banking App Interface Concept"
-              width="360"
-            />
-            <h2 class="images-list-title">Banking App Interface Concept</h2>
-            <p class="par iamges-list-par">App</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img
-              src="./images/2-port.jpg"
-              alt="Cashless Payment"
-              width="360"
-            />
-            <h2 class="images-list-title">Cashless Payment</h2>
-            <p class="par iamges-list-par">Marketing</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img src="./images/3-port.jpg" alt="Meditation App" width="360" />
-            <h2 class="images-list-title">Meditation App</h2>
-            <p class="par iamges-list-par">App</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img src="./images/4-port.jpg" alt="Taxi Service" width="360" />
-            <h2 class="images-list-title">Taxi Service</h2>
-            <p class="par iamges-list-par">Marketing</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img
-              src="./images/5-port.jpg"
-              alt="Screen Illustrations"
-              width="360"
-            />
-            <h2 class="images-list-title">Screen Illustrations</h2>
-            <p class="par iamges-list-par">Design</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img src="./images/6-port.jpg" alt="Online Courses" width="360" />
-            <h2 class="images-list-title">Online Courses</h2>
-            <p class="par iamges-list-par">Marketing</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img
-              src="./images/7-port.jpg"
-              alt="Instagram Stories Concept"
-              width="360"
-            />
-            <h2 class="images-list-title">Instagram Stories Concept</h2>
-            <p class="par iamges-list-par">Design</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img src="./images/8-port.jpg" alt="Organic Food" width="360" />
-            <h2 class="images-list-title">Organic Food</h2>
-            <p class="par iamges-list-par">Web Site</p></a
-          >
-        </li>
-        <li class="images-list-data">
-          <a class="iamges-list-link" href=""
-            ><img src="./images/9-port.jpg" alt="Fresh Coffee" width="360" />
-            <h2 class="images-list-title">Fresh Coffee</h2>
-            <p class="par iamges-list-par">Web Site</p></a
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="images-list">
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img
+                src="./images/1-port.jpg"
+                alt="Banking App Interface Concept"
+                width="360"
+              />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Banking App Interface Concept</h2>
+                <p class="par iamges-list-par">App</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img
+                src="./images/2-port.jpg"
+                alt="Cashless Payment"
+                width="360"
+              />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Cashless Payment</h2>
+                <p class="par iamges-list-par">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img
+                src="./images/3-port.jpg"
+                alt="Meditation App"
+                width="360"
+              />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Meditation App</h2>
+                <p class="par iamges-list-par">App</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img src="./images/4-port.jpg" alt="Taxi Service" width="360" />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Taxi Service</h2>
+                <p class="par iamges-list-par">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img
+                src="./images/5-port.jpg"
+                alt="Screen Illustrations"
+                width="360"
+              />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Screen Illustrations</h2>
+                <p class="par iamges-list-par">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img
+                src="./images/6-port.jpg"
+                alt="Online Courses"
+                width="360"
+              />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Online Courses</h2>
+                <p class="par iamges-list-par">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img
+                src="./images/7-port.jpg"
+                alt="Instagram Stories Concept"
+                width="360"
+              />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Instagram Stories Concept</h2>
+                <p class="par iamges-list-par">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img src="./images/8-port.jpg" alt="Organic Food" width="360" />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Organic Food</h2>
+                <p class="par iamges-list-par">Web Site</p>
+              </div>
+            </a>
+          </li>
+          <li class="images-list-data">
+            <a class="iamges-list-link" href=""
+              ><img src="./images/9-port.jpg" alt="Fresh Coffee" width="360" />
+              <div class="images-list-data-wrap">
+                <h2 class="images-list-title">Fresh Coffee</h2>
+                <p class="par iamges-list-par">Web Site</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <a class="footer-logo" href="./index.html">
-        Web<span class="logo-studio-part-bot">Studio</span>
-      </a>
-      <p class="footer-par">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container footer-container">
+        <a class="footer-logo" href="./index.html">
+          Web<span class="logo-studio-part-bot">Studio</span>
+        </a>
+        <p class="footer-par">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
